@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  background: #0b1220;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.top {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.section-title {
+  margin-top: 20px;
+}
+
+.hist {
+  background: #111827;
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#alert {
+  margin-top: 15px;
+  color: orange;
+  text-align: center;
+}
