@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+  margin:0;
+  padding:20px;
+}
+
+h1 {
+  text-align:center;
+}
+
+.grid {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.card {
+  background:#1e293b;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  min-width:100px;
+}
+
+canvas {
+  background:#111827;
+  border-radius:10px;
+  margin-top:20px;
+}
