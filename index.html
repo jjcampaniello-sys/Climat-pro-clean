@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Climate PRO ++</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<h1>🌤️ Climate PRO ++</h1>
+
+<input id="search" placeholder="🔎 Rechercher une ville...">
+
+<button onclick="searchCity()">🌍 Rechercher</button>
+<button onclick="gps()">📍 GPS</button>
+
+<div class="card">
+🌡️ Température : <span id="temp">--</span>°C<br>
+🔥 Ressenti : <span id="feel">--</span>°C<br>
+💧 Humidité : <span id="hum">--</span>%<br>
+🌬️ Vent : <span id="wind">--</span> km/h
+</div>
+
+<div class="card">
+<h3>🧠 IA Confort</h3>
+<p>Comment vous sentez-vous ?</p>
+
+<button onclick="feedback('hot')">🔥 Trop chaud</button>
+<button onclick="feedback('ok')">🙂 Confortable</button>
+<button onclick="feedback('cold')">🥶 Trop froid</button>
+
+<p id="ai"></p>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
