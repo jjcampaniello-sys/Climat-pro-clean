@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Climate PRO MAX v2</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<h1>🌤️ Climate PRO MAX v2</h1>
+
+<input id="search" placeholder="🔎 Ville">
+<div id="results"></div>
+
+<div class="grid">
+  <div class="card">🌡️ Temp<br><span id="temp">--</span></div>
+  <div class="card">💧 Humidité<br><span id="hum">--</span></div>
+  <div class="card">🌬️ Vent<br><span id="wind">--</span></div>
+  <div class="card highlight">🔥 Ressenti<br><span id="feel">--</span></div>
+  <div class="card">🧠 IA<br><span id="ai">--</span></div>
+</div>
+
+<div id="today"></div>
+<div id="tomorrow"></div>
+
+<div id="map"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
