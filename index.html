@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Climate PRO MAX</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+
+<!-- MAP -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+button{
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#334155;
+  color:white;
+}
+button:hover{
+  background:#475569;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🌤️ Climate PRO MAX</h1>
+
+<input id="search" placeholder="🔎 Ville">
+<div id="results"></div>
+
+<hr>
+
+<div>
+  <h3>🧠 Ton ressenti</h3>
+
+  <!-- ✅ BOUTONS GARANTIS VISIBLES -->
+  <button onclick="sendFeedback(30)">🔥 Trop chaud</button>
+  <button onclick="sendFeedback(22)">😌 Bien</button>
+  <button onclick="sendFeedback(15)">🥶 Trop froid</button>
+</div>
+
+<hr>
+
+<div>
+  🌡️ Temp: <span id="temp">--</span><br>
+  💧 Hum: <span id="hum">--</span><br>
+  🌬️ Vent: <span id="wind">--</span><br>
+  🔥 Ressenti: <span id="feel">--</span><br>
+  🧠 IA: <span id="ai">--</span>
+</div>
+
+<hr>
+
+<div id="today"></div>
+<div id="tomorrow"></div>
+
+<div id="map" style="height:300px;"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
